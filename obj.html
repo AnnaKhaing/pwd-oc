@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let bob={
+            name:"Bob",
+            hello:function(){
+                return `Hello, this is ${this.name}`;
+            }
+        };
+
+        class Human{
+            constructor(name){
+                this.name=name;
+            }
+            name="Anna";
+            eat(){
+                return `${this.name} eats`;
+            }
+        }
+
+        class Adult extends Human{
+            work(){
+                return `${this.name} is working`;
+            }
+        }
+        var human1=new Adult("Bella");
+    </script>
+
+</body>
+</html>

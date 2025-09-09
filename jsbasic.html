@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     function add(a,b){
+        return a+b;
+     }
+
+     let subtract=function(a,b){
+        return a-b;
+     }
+
+     let multi= (a,b)=> a*b;
+     let double= n => n*2;
+
+     let num1=[1,2,3,4,5];
+     let result=num1.map(n=>n*2);
+
+     let result2=num1.filter(n=> n%2);
+
+     let data=[
+        {name: 'Anna', age:19},
+        {name: 'Alice', age:25},
+        {name: 'Peter', age:22},
+        {name: 'John', age:28},
+        {name: 'Bella', age:30},
+     ];
+     let users=data.map(user=>user.name);
+     let u20=data.filter(user=>user.age<=20);
+     let u20names=u20.map(user=>user.name);
+   </script> 
+</body>
+</html>

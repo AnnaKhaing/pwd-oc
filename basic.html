@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 3px;
+        }
+       .outer {
+            background-color: green;
+            width: 800px;
+            height: 700px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: flex-end;
+            justify-content: space-around;
+            
+       } 
+       .inner {
+        background-color: blue;
+            width: 200px;
+            height: 300px;
+            border: 5px solid red;
+            /* margin-bottom: 10px; */
+            /* padding: 5px; */
+       }
+       #box1{
+        color: white;
+            padding: 10px;
+            box-sizing: border-box;
+       }
+       a{
+        color: yellow;
+       }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <!-- <div class="inner" id="box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius harum iusto nisi ut repellendus ipsam esse doloremque perspiciatis quia nesciunt voluptates, similique rem, molestiae fugiat dolores assumenda reiciendis aut obcaecati.</div> -->
+        <div class="inner">
+            <a href="https://en.wikipedia.org/wiki/HTML#Elements" title="Test">Click me</a>
+        </div>
+        <div class="inner"></div>
+        <div class="inner" id="myTest"></div>
+    </div>
+</body>
+</html>
